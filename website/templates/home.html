@@ -1,0 +1,602 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Technology, Tutorials, Coding, Programming, Web-development, Graphics Designing, Filming, Video Shooting, Video Editing">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+
+    <title>Africa Arise School Of Python</title>
+
+    <meta name="robots" content="index, follow">
+   <link rel="shortcut icon" href="{% static 'website/images//cap.ico' %}" type="image/x-icon">
+  
+<!-- Start of Async Drift Code -->
+<script>
+    "use strict";
+    
+    !function() {
+      var t = window.driftt = window.drift = window.driftt || [];
+      if (!t.init) {
+        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+        t.factory = function(e) {
+          return function() {
+            var n = Array.prototype.slice.call(arguments);
+            return n.unshift(e), t.push(n), t;
+          };
+        }, t.methods.forEach(function(e) {
+          t[e] = t.factory(e);
+        }), t.load = function(t) {
+          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+          var i = document.getElementsByTagName("script")[0];
+          i.parentNode.insertBefore(o, i);
+        };
+      }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('x69s4sphsgp7');
+    </script>
+    <!-- End of Async Drift Code -->
+
+
+<!--
+Africa Arise template
+https:/kingdomstudios.cf/designs
+-->
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/font-awesome.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/fullpage.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/owl.carousel.css' %}">
+
+    <link rel="stylesheet" href="{% static 'website/css/animate.css' %}">
+
+    <link rel="stylesheet" href="{% static 'website/css/templatemo-style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'website/css/responsive.css' %}">
+
+    </head>
+    
+    <body>
+    
+    <div id="video">
+        <div class="preloader">
+            <div class="preloader-bounce">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <header id="header">
+            <div class="container-fluid">
+                <div class="navbar">                
+                    <a href="#" id="logo" title="Elegance by TemplateMo">
+                        <img src="{% static 'website/images/xoollogo.png' %}" alt="">
+                    </a>   
+                    <div class="navigation-row">
+                        <nav id="navigation">
+                            <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
+                            <div class="nav-box navbar-collapse">
+                                <ul class="navigation-menu nav navbar-nav navbars" id="nav">
+                                    <li data-menuanchor="slide01" class="active"><a href="#slide01">Home</a></li>
+                                    <li data-menuanchor="slide02"><a href="#slide02">About Us</a></li>
+                                    <li data-menuanchor="slide03"><a href="#slide03">Our Services</a></li>
+                                    <li data-menuanchor="slide04"><a href="#slide04">The School</a></li>
+                                    <li data-menuanchor="contact"><a href="{% url 'contact' %}">Our Map</a></li>
+                                    <li data-menuanchor="slide05"><a href="#slide05">Our Work</a></li>
+                                    <li data-menuanchor="slide06"><a href="#slide06">Testimonials</a></li>
+                                    <li data-menuanchor="slide07"><a href="#slide07"></a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <video autoplay muted loop id="myVideo">
+          <source src="{% static 'website/images/video-bg.mp4' %}" type="video/mp4">
+        </video>
+
+        <div id="fullpage" class="fullpage-default">
+
+            <div class="section animated-row" data-section="slide01">
+                <div class="section-inner">
+                    <div class="welcome-box">
+                        <span class="welcome-first animate" data-animate="fadeInUp">The School Of Python Programming</span>
+                        <h1 class="welcome-title animate" data-animate="fadeInUp">Africa Arise</h1>
+                        <p class="animate" data-animate="fadeInUp">Imagine what will happen when an 8 year old child empress Technology by building their own mobile games in their early days? 
+                          Just imagine, a thirteen year old child building a business website for his/her father?</p>
+                        <div class="scroll-down next-section animate data-animate="fadeInUp""><img src="{% static 'website/images/mouse-scroll.png' %}" alt=""><span>Scroll Down</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section animated-row" data-section="slide02">
+                <div class="section-inner">
+                    <div class="about-section">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 wide-col-laptop">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="about-contentbox">
+                                            <div class="animate" data-animate="fadeInUp">
+                                                <span>About Us</span>
+                                                <h2>Let's Help Them Be What They Want Earlier Than Ever!</h2>
+                                                <p>Africa Arise Programming for kids is an idea born of a self-taught Computer Programmer <strong> (Honest Nzombe) </strong> who sees a great world awaiting our young ones if they learn computers at early stages of their lives.
+                                                    The Vision and Mission is simply to Prepare and Empower our young ones beyond the 4th Industrial Revolution. To prepare for the establishment of a generation 0f massive technological inventions between 2020 and 2050 </p>
+                                            </div>
+                                            <div class="facts-list owl-carousel">
+                                                <div class="item animate" data-animate="fadeInUp">
+                                                    <div class="counter-box">
+                                                        <i class="fa fa-trophy counter-icon" aria-hidden="true"></i><span class="count-number">Remember</span>They Can Conqure The World!
+                                                    </div>
+                                                </div>
+                                                <div class="item animate" data-animate="fadeInUp">
+                                                    <div class="counter-box">
+                                                        <i class="fa fa-graduation-cap counter-icon" aria-hidden="true"></i><span class="count-number">Live Beyond</span>  Academic Education and Employment
+                                                    </div>
+                                                </div>
+                                                <div class="item animate" data-animate="fadeInUp">
+                                                    <div class="counter-box">
+                                                        <i class="fa fa-desktop counter-icon" aria-hidden="true"></i><span class="count-number">Can Create </span> A Whole New World With Computers
+                                                    </div>
+                                                </div>
+                                                <div class="item animate" data-animate="fadeInUp">
+                                                    <div class="counter-box">
+                                                        <i class="fa fa-support counter-icon" aria-hidden="true"></i><span class="count-number">Team Work</span> Can Learn Team Work Early and Live beyond Competition
+                                                    </div>
+                                                </div>
+                                                <div class="item animate" data-animate="fadeInUp">
+                                                    <div class="counter-box">
+                                                        <i class="fa fa-certificate counter-icon" aria-hidden="true"></i><span class="count-number">Not Defined By</span> Certificates But Skills They Have
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <figure class="about-img animate" data-animate="fadeInUp"><img src="{% static 'website/images/honestn.png' %}" class="rounded" alt=""></figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section animated-row" data-section="slide03">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                                <span>Our Services</span>
+                                <h2>What Do We Offer..?</h2>
+                            </div>
+                            <div class="services-section">
+                                <div class="services-list owl-carousel">
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-bookmark" aria-hidden="true"></i></span>
+                                            <h3> Phase One: 4 - 7 Yrs</h3>
+                                            <p>At this phase children will learn computational thinking - Learning to think like a computer, (The art of listening and following step by step instructions).
+                                                They will aslo learn computer basics like switching on and off, holding the mouse and typing their names including short drag and drop puzzels.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-cloud" aria-hidden="true"></i></span>
+                                            <h3>Phase Two: 8 - 11 Yrs</h3>
+                                            <p>Here, kids will begin to solve a little complex puzzels, creating some games through drag and drop.
+                                                They will also be introduced to Computer coding where they have to type in code already made for they. Though they may not
+                                            understand what it may mean, importance of programming is knowing <strong>What it does!</strong> This way, their journey will start well.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-desktop" aria-hidden="true"></i></span>
+                                            <h3>Phase Three: 12 - 17 Yrs </h3>
+                                            <p>This age group is ready enough to understand concepts. Beginners are introduced to the short puzzels to just but test their 
+                                                comprehension ability. That done, they are introduced to their first language which is Python Languge <strong> (Python Is Very Beginner Friendly).</strong>
+                                             Here, they will learn the basics to advanced of the language by building real_world projects for example, Do To List Apps, Rock Paper Scissors Games all the way to Websites and Blogs.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-mobile" aria-hidden="true"></i></span>
+                                            <h3>Phase Four: 18 Plus | Adults</h3>
+                                            <p>What we offer for 18 Years Plus is not different from Phase Three, Content is all the same, only charges are different.
+                                                Beginners are introduced to the short puzzels to just but test their 
+                                                comprehension ability. That done, they are introduced to their first language which is Python Languge <strong> (Python Is Very Beginner Friendly).</strong>
+                                             Here, they will learn the basics to advanced of the language by building real_wolrd projects like eg Do To List Apps, Rock Paper Scissors Games all the way to Websites and Blogs. </p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
+                                            <h3>Phase Five: Coaching (Individuals | Groups) </h3>
+                                            <p>This is for people who wish to learn new things and dont know where and how to start. Advice on how to get started and if neccessary, where to get resources
+                                                We also include those who wish to verture into <strong>Freelancing and Dont have any clue.</strong> </p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-database" aria-hidden="true"></i></span>
+                                            <h3>Phase Six: Organisations | Entities</h3>
+                                            <p>Companies and Organisations that may need to work with us in building their projects, seek advice and or Training.  </p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-bell" aria-hidden="true"></i></span>
+                                            <h3>Graphics Designing Lessons</h3>
+                                            <p>We also Teach Graphics Designing, UI And UX to absolute beginners. We will introduce you to vast resources in the <fieldset>and provide softwares like
+                                                Adobe Photoshop, Illustrator, Indesign, Experience Design, Affinity Photo, Affinity Design, Corel Draw, etc.
+                                            </fieldset> </p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-camera" aria-hidden="true"></i></span>
+                                            <h3>Video Editing & Filming Lessons</h3>
+                                            <p>Absolute beginners to Filming, beginners to advanced camera lessons, Colour grading basics, Video Editing. Vast resources and available, 
+                                                Adobe Primiere Pro, After Effects, Magix Vegas, Da Vinci Resolve etc. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section animated-row" data-section="slide04">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-7 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                                <span>Fields Of Training</span>
+                                <h2>What i’m good?</h2>
+                            </div>
+                            <div class="skills-row animate" data-animate="fadeInDown">
+                                <div class="row">
+                                    <div class="col-md-8 offset-md-2">   
+                                        <div class="skill-item">
+                                            <h6>Python - Django and Flask Frameworks</h6>
+                                            <div class="skill-bar">
+                                                <span>70%</span>
+                                                <div class="filled-bar"></div>
+                                            </div>          
+                                        </div>
+                                        <div class="skill-item">
+                                            <h6>Graphics Design</h6>
+                                            <div class="skill-bar">
+                                                <span>90%</span>
+                                                <div class="filled-bar-2"></div>
+                                            </div>          
+                                        </div>
+                                        <div class="skill-item">
+                                            <h6>Filming | Video Shoot & Editing</h6>
+                                            <div class="skill-bar">
+                                                <span>70%</span>
+                                                <div class="filled-bar"></div>
+                                            </div>          
+                                        </div>
+                                        <div class="skill-item last-skill">
+                                            <h6>Coaching</h6>
+                                            <div class="skill-bar">
+                                                <span>60%</span>
+                                                <div class="filled-bar-2"></div>
+                                            </div>          
+                                        </div>                   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section animated-row" data-section="slide06">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                                <span>Our Work</span>
+                                <h2>What We’ve done?</h2>
+                            </div>
+                            <div class="gallery-section">
+                                <div class="gallery-list owl-carousel">
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="{% static 'website/images/java.png' %}" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>We Program In Javascript</h4>
+                                                <p>We have built several websites using Javascript, students who wish to learn this language would take it as
+                                                    their second language from Python. Having laid a solid programing foundation in Python, students can flexible learn Javascript with little coaching. 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="{% static 'website/images/python.png' %}" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>We Program In Python</h4>
+                                                <p>We are capable of transforming anyone who doesn't know to program in Python become a novice. 
+                                                    The only requirement is the willingness to learn.
+                                                     We teach in very simple ways which even the dead can understand.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="{% static 'website/images/web.png' %}" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>Websites Currently Online</h4>
+                                                <p>We have managed to build and Host several sites this far including this very one.
+                                                    Some websites include: <br> 
+                                                    <a href="https://www.kingdomstudios.cf" class="tm-social-link">kingdomstudios.cf<i class="fa fa-web"></i></a>
+                                                    <br>
+                                                    <a href="https://www.edwardpumps.ga" class="tm-social-link">edwardpumps.ga<i class="fa fa-web"></i></a>
+                                                   <br>
+                                                    <a href="https://www.kdcco.cf" class="tm-social-link">kdcco.cf<i class="fa fa-web"></i></a>
+                                                    <br>
+                                                    <a href="https://www.truevineministries.ml" class="tm-social-link">truevineministries.ml<i class="fa fa-web"></i></a>
+                                                   <br>
+                                                    <a href="https://www.honestportfolio.herokuapp.com" class="tm-social-link">honestportfolio.herokuapp.com<i class="fa fa-web"></i></a>
+                                                   
+                                                    <br> Thus to mention but a few of the projects we did.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="{% static 'website/images/film.jpg' %}" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>Filming</h4>
+                                                <p>We have shot at several wedding, church gatherings, and few music videos
+                                                    We are currently Training two students at Kingdom Eagles Int'l Church in Joburg Tembisa.
+                                                    Some of the training videos soon to be on our Youtube Channel (Africa Arise).
+                                                     You can visit to see some of our work already there. 
+                                                     <br> Click this Youtube Link to see:
+                                                     <a href="https://www.youtube.com/channel/UC__nFk1bLgTC7I45lbiyp_Q" class="tm-social-link">Africa Arise Youtube<i class="fa fa-youtube"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="{% static 'website/images/forest.png' %}" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>Graphics Designing</h4>
+                                                <p>A glimpse of our design work is seen right here. You can find more on our Studio website link below:
+                                                    <br> We have designed for several churches, musicians and writers thus far.
+                                                    <a href="https://www.kingdomstudios.cf" class="tm-social-link">kingdomstudios.cf<i class="fa fa-web"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="{% static 'website/images/code1.png' %}" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>Phase One 4 - 7Yrs Preview</h4>
+                                                <p>Children will be Learning through story telling and following instructions. # Computational Thinking</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="{% static 'website/images/code4.png' %}" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>Phase Two 8 - 11Yrs Preview</h4>
+                                                <p>Children will be learning by solving these puzzels and create their own games.
+                                                    They have to be able to make different animations to objects they put in the scenes and unleash their creative power.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="{% static 'website/images/code3.png' %}" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>Phase Two 8 - 11Yrs Preview</h4>
+                                                <p>This is a preview where we introduce 8 - 11Yrs to typing.
+                                                     They will learn to type and improve their motor skills and get prepared for serious coding when they are 12Yrs Plus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="{% static 'website/images/code5.png' %}" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>Phase Three and Four Preview</h4>
+                                                <p>This is a preview for adults where they will be learning programing concepts by building real-world projects.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section animated-row" data-section="slide05">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                                <span>What Some Of Our Clients Say</span>
+                                <h2>What THEY SAY?</h2>
+                            </div>
+                            <div class="col-md-8 offset-md-2">
+                                <div class="testimonials-section">
+                                    <div class="testimonials-slider owl-carousel">
+                                        <div class="item animate" data-animate="fadeInUp">
+                                            <div class="testimonial-item">
+                                                <div class="client-row">
+                                                    <img src="{% static 'website/images/bishop1.jpg' %}" class="rounded-circle" alt="profile 1">
+                                                </div>
+                                                <div class="testimonial-content">
+                                                    <h4>United In God Ministries</h4>
+                                                    <p>"We are always happy to have our designs and videos done by these guys."</p>
+                                                    <span>Bishop Makhoba - Ivory Park, Nyama_King Area</span>
+                                                </div>                                           
+                                            </div>
+                                        </div>
+                                        <div class="item animate" data-animate="fadeInUp">
+                                            <div class="testimonial-item">
+                                                <div class="client-row">
+                                                    <img src="{% static 'website/images/rev.jpg' %}" class="rounded-circle" alt="profile 2">
+                                                </div>
+                                                <div class="testimonial-content">
+                                                    <h4>Kingdom Eagles Int'l Church</h4>
+                                                    <p>"Everyone needs people to not only work with, but rather, count on!"</p>
+                                                    <span>Reverand G. Ngigi - Ivory Park 3, Midrand</span>
+                                                </div>                                           
+                                            </div>
+                                        </div>
+                                        <div class="item animate" data-animate="fadeInUp">
+                                            <div class="testimonial-item">
+                                                <div class="client-row">
+                                                    <img src="{% static 'website/images/logo1.jpg' %}" class="rounded-circle" alt="profile 3">
+                                                </div>
+                                                <div class="testimonial-content">
+                                                    <h4>True Vine International Ministries<h4>
+                                                    <p>"The Joy of having a functional Church website never leave us!"</p>
+                                                    <span>Phomolong Section, Tembisa</span>
+                                                </div>                                           
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="section animated-row" data-section="slide07">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-7 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                                <span>Copyright &copy; Feb_2020</span>
+                                <h2>Get In Touch!</h2>
+                            </div>
+                            <div class="contact-section">
+                                <div class="row">
+                                    <div class="col-md-6 animate" data-animate="fadeInUp">
+                                        <div class="contact-box">
+                                            <div class="contact-row">
+                                                <i class="fa fa-map-marker"></i> 189, Lawrence Phokanoka Street, Tembisa, 1632 South Africa
+                                            </div>
+                                            <div class="contact-row">
+                                                <i class="fa fa-phone"></i> +278 10101 3462
+                                            </div>
+                                            <div class="contact-row">
+                                                <i class="fa fa-envelope"></i> africaarise19@gmail.com
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 animate" data-animate="fadeInUp">
+                                        <br> <br>
+                                        <footer class="tm-footer">
+            
+                                            <div class="tm-social-icons-container text-xs-center">
+                                                <a href="https://www.youtube.com/channel/UC__nFk1bLgTC7I45lbiyp_Q" class="tm-social-link"><i class="fa fa-youtube"></i></a>
+                                                <br>
+                                                <a href="https://mail.google.com/mail/u/0/#inbox" class="tm-social-link"><i class="fa fa-google"></i></a>
+                                                <br>
+                                                <a href="https://api.whatsapp.com/send?phone=27810103462" class="tm-social-link"><i class="fa fa-whatsapp"></i></a>
+                                                 <br>
+                                                <a href="href="tel:+27810103462 class="tm-social-link"><i class="fa fa-phone"></i></a>
+                                                 <br>
+                                                <a href="https://twitter.com/AriseCoding" class="tm-social-link"><i class="fa fa-twitter"></i></a>
+                                                  <br>
+                                                <a href="https://www.facebook.com/afriarise/" class="tm-social-link"><i class="fa fa-facebook"></i></a>
+                                            </div>
+                                            <br>
+                                            <p class="tm-copyright-text">Copyright &copy; 2020 Africa Arise School Of Python Programming
+                                            
+                                            - Designed and Developed by: <a rel="nofollow" href="http://www.kingdomstudios.cf" class="tm-footer-link" target="_parent">Africa Arise & KingdomStudios</a></p>
+                                    
+                                        </footer>
+                                        <div id="form-messages" class="mt-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="social-icons">
+            <div class="text-right">
+                <ul class="social-icons">
+                <li><a href="https://www.facebook.com/afriarise/" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/AriseCoding" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/feed/" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UC__nFk1bLgTC7I45lbiyp_Q?view_as=subscriber" title="youtube"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>  
+
+
+    <script src="{% static 'website/js/jquery.js' %}"></script>
+
+    <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+
+    <script src="{% static 'website/js/fullpage.min.js' %}"></script>
+
+    <script src="{% static 'website/js/scrolloverflow.js' %}"></script>
+
+    <script src="{% static 'website/js/owl.carousel.min.js' %}"></script>
+
+    <script src="{% static 'website/js/jquery.inview.min.js' %}"></script>
+
+    <script src="{% static 'website/js/form.js' %}"></script>
+
+    <script src="{% static 'website/js/custom.js' %}"></script>
+
+
+  </body>
+</html>

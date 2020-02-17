@@ -1,0 +1,320 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Dento - Dentist &amp; Medical HTML Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Africa Arise School Of Python</title>
+
+<!-- Start of Async Drift Code -->
+<script>
+  "use strict";
+  
+  !function() {
+    var t = window.driftt = window.drift = window.driftt || [];
+    if (!t.init) {
+      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+      t.factory = function(e) {
+        return function() {
+          var n = Array.prototype.slice.call(arguments);
+          return n.unshift(e), t.push(n), t;
+        };
+      }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+      }), t.load = function(t) {
+        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+        var i = document.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(o, i);
+      };
+    }
+  }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('x69s4sphsgp7');
+  </script>
+  <!-- End of Async Drift Code -->
+
+
+
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif; 
+        font-style: normal;
+
+        background-image: url({% static 'website/images/item-1.jpg' %});
+      }
+
+      .dento-contact-area {
+  position: relative;
+  z-index: 1; }
+  .dento-contact-area .google-maps {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 470px; }
+    @media only screen and (max-width: 767px) {
+      .dento-contact-area .google-maps {
+        height: 280px; } }
+    .dento-contact-area .google-maps iframe {
+      width: 100%;
+      height: 100%;
+      border: none; }
+
+      .contact-information {
+  position: relative;
+  z-index: 1;
+  padding: 30px 50px;
+  background-color: #00aeef;
+  border-radius: 3px; }
+  @media only screen and (max-width: 767px) {
+    .contact-information {
+      margin-bottom: 100px; } }
+  .contact-information h5 {
+    color: #ffffff; }
+  .contact-information p {
+    color: #ffffff; }
+
+.contact-form {
+  position: relative;
+  z-index: 2; }
+  .contact-form .form-control {
+    width: 50%;
+    height: 46px;
+    padding: 0 15px;
+    font-size: 13px;
+    font-style: italic;
+    background-color:aquamarine;
+   }
+    .contact-form .form-control:focus {
+      box-shadow:aquamarine;
+      border-color: #00aeef; }
+  .contact-form textarea.form-control {
+    height: 110px;
+    padding: 15px;
+    background-color: aquamarine;
+  
+  h2{
+    color: white;
+  }
+
+    </style>
+<link rel="stylesheet" type="text/css" href="{% static 'website/css/bootstrap.min.css' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'website/css/font-awesome.css' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'website/css/fullpage.min.css' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'website/css/owl.carousel.css' %}">
+
+<link rel="stylesheet" href="{% static 'website/css/animate.css' %}">
+
+<link rel="stylesheet" href="{% static 'website/css/templatemo-style.css' %}">
+
+<link rel="stylesheet" href="{% static 'website/css/responsive.css' %}">
+
+
+  <!-- Favicon -->
+  <link rel="icon" href="{% static 'website/img/core-img/favicon.ico' %}">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="{% static 'website/css1/style.css2' %}">
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preload-content">
+      <div id="dento-load"></div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Top Header Area -->
+    
+    <!-- Top Header End -->
+
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <div class="container">
+          <!-- Classy Menu -->
+          <nav class="classy-navbar justify-content-between" id="dentoNav">
+
+            <!-- Logo -->
+            <a class="nav-brand" href="index.html"><img src="{% static 'website/images/xoollogo.png' %}" alt=""></a>
+
+            <!-- Navbar Toggler -->
+            <div class="classy-navbar-toggler">
+              <span class="navbarToggler"><span></span><span></span><span></span></span>
+            </div>
+
+            <!-- Menu -->
+            <div class="classy-menu">
+
+              <!-- Close Button -->
+              <div class="classycloseIcon">
+                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+              </div>
+              <br><br>
+              <!-- Nav Start -->
+              <div class="classynav">
+                <ul id="nav">
+                  <li><a href="{% url 'home' %}"><h4>Back To Home Page</h4></a></li>
+              
+                </ul>
+              </div>
+              <!-- Nav End -->
+            </div>
+
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  {% if message_name %}
+  <center> <p> Thank You {{message_name}}!</p>
+  
+  We received your email and will soon contact you...
+</center>
+{% endif %}
+
+  <!-- ***** Header Area End ***** -->
+  <div class="section animated-row" data-section="slide07">
+    <div class="section-inner">
+        <div class="row justify-content-center">
+            <div class="col-md-7 wide-col-laptop">
+                <div class="title-block animate" data-animate="fadeInUp">
+                    <span>Contact</span>
+                    <h2>Get In Touch!</h2>
+                </div>
+                <div class="contact-section">
+                    <div class="row">
+                        <div class="col-md-6 animate" data-animate="fadeInUp">
+                            <div class="contact-box">
+                                <div class="contact-row">
+                                    <i class="fa fa-map-marker"></i> 189, Lawrence Phokanoka Street, Tembisa, 1632 South Africa
+                                </div>
+                                <div class="contact-row">
+                                    <i class="fa fa-phone"></i>+278 1010 3462
+                                </div>
+                                <div class="contact-row">
+                                    <i class="fa fa-envelope"></i>africaarise19@gmail.com
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 animate" data-animate="fadeInUp">
+                            <form id="ajax-contact" method="post" action="{% url 'contact' %} ">
+                                {% csrf_token %}
+                                <div class="input-field">
+                                    <input type="text" class="form-control" name="message-name" id="name" required placeholder="Name">
+                                </div>
+                                <div class="input-field">
+                                    <input type="email" class="form-control" name="message-email" id="email" required placeholder="Email">
+                                </div>
+                                <div class="input-field">
+                                    <textarea class="form-control" name="message" id="message" required placeholder="Message"></textarea>
+                                </div>
+                                <button class="btn" type="submit">Submit</button>
+                            </form>
+                            <div id="form-messages" class="mt-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<br>
+
+  <!-- ***** map Area Start ***** -->
+  <section class="dento-contact-area mt-200 mb-500">
+    <h2>Here Is Our Map</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="google-maps mb-500">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.630260786622!2d28.19596976452503!3d-26.012926612540625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956c0cdf486e25%3A0xe46ee485744a4baa!2sKhatamping%2C%20Tembisa%2C%201632!5e0!3m2!1sen!2sza!4v1581413391971!5m2!1sen!2sza"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+
+      <footer class="tm-footer">
+            
+        <div class="tm-social-icons-container text-xs-center">
+            <a href="https://www.youtube.com/channel/UC__nFk1bLgTC7I45lbiyp_Q" class="tm-social-link"><i class="fa fa-youtube"></i></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox" class="tm-social-link"><i class="fa fa-google"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=27810103462" class="tm-social-link"><i class="fa fa-whatsapp"></i></a>
+            <a href="href="tel:+27810103462 class="tm-social-link"><i class="fa fa-phone"></i></a>
+            <a href="https://twitter.com/AriseCoding" class="tm-social-link"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/afriarise/" class="tm-social-link"><i class="fa fa-facebook"></i></a>
+        </div>
+        <br>
+        <p class="tm-copyright-text">Copyright &copy; 2020 Africa Arise School Of Python Programming
+        
+        - Designed and Developed by: <a rel="nofollow" href="http://www.kingdomstudios.cf" class="tm-footer-link" target="_parent">Africa Arise & KingdomStudios</a></p>
+
+    </footer>
+
+
+     
+      <div id="social-icons">
+        <div class="text-right">
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/afriarise/" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/AriseCoding" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/feed/" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UC__nFk1bLgTC7I45lbiyp_Q?view_as=subscriber" title="youtube"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>  
+
+
+<script src="{% static 'website/js/jquery.js' %}"></script>
+
+<script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+
+<script src="{% static 'website/js/fullpage.min.js' %}"></script>
+
+<script src="{% static 'website/js/scrolloverflow.js' %}"></script>
+
+<script src="{% static 'website/js/owl.carousel.min.js' %}"></script>
+
+<script src="{% static 'website/js/jquery.inview.min.js' %}"></script>
+
+<script src="{% static 'website/js/form.js' %}"></script>
+
+<script src="{% static 'website/js/custom.js' %}"></script>
+
+  <!-- jQuery js -->     
+  <script src="{% static 'website/js/jquery.min.js' %}"></script>
+  <!-- Popper js -->
+  <script src="{% static 'website/js/popper.min.js' %}"></script>
+  <!-- Bootstrap js -->
+  <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+  <!-- All js -->
+  <script src="{% static 'website/js/dento.bundle.js' %}"></script>
+  <!-- Active js -->
+  <script src="{% static 'website/js/default-assets/active.js' %}"></script>
+
+</body>
+
+</html>
