@@ -1,0 +1,1 @@
+web: gunicorn africa_arise_web.wsgi
