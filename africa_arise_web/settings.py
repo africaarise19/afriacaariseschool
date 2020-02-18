@@ -3,10 +3,11 @@ import django_heroku
 import dj_database_url
 from decouple import config
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
+ 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
@@ -117,13 +118,15 @@ STATICFILES_DIRS = [
 
 STATICFILE_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+
+'''
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'africaarise19@gmail.com'
-EMAIL_HOST_PASSWORD = 'nzombe10'
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
-
+'''
 
 
 # python -m smtpd -n -c DebuggingServer localhost:1025
