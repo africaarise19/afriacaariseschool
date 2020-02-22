@@ -43,15 +43,6 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
- MIDDLEWARE = [
-    # SecurityMiddleware must be listed before other middleware
-    'django.middleware.security.SecurityMiddleware',
-    # ...
-]
-
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-SECURE_SSL_REDIRECT = True
-
 ROOT_URLCONF = 'africa_arise_web.urls'
 TEMPLATES = [
     {
